@@ -1,8 +1,8 @@
-# Marathon::Ruby
+# Marathon
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/marathon/ruby`. To experiment with that code, run `bin/console` for an interactive prompt.
+`marathon-ruby` is a Ruby client for Marathon API.
+So far it is not complete, but includes basic functionality to start/update/delete appliactions.
 
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
@@ -22,7 +22,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'marathon'
+
+client = Marathon.new('your-marathon-server.com')
+client.create_app(configuration)
+client.update_appp(id, configuration)
+client.find_app(id)
+client.delete_app(id)
+```
 
 ## Development
 
@@ -32,7 +40,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/marathon-ruby/fork )
+1. Fork it ( https://github.com/3scale/marathon-ruby/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
