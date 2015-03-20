@@ -1,4 +1,4 @@
-# Marathon
+# Marathon [![Build Status](https://travis-ci.org/3scale/marathon-ruby.svg?branch=master)](https://travis-ci.org/3scale/marathon-ruby)
 
 `marathon-ruby` is a Ruby client for Marathon API.
 So far it is not complete, but includes basic functionality to start/update/delete appliactions.
